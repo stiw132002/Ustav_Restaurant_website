@@ -39,13 +39,13 @@ html,body{
 
 nav{
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
     /* background-color:yellow; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    margin-top: 20px;
+    padding: 4vmax;
+    margin-top: 1.3vmax;
 }
 
 nav h1{
@@ -59,11 +59,12 @@ nav h1{
 
 nav h2 span{
     /* background-color: red; */
-    padding:0px 80px 0px 0px;
-    margin: 10px;
+    padding:0px 7vmax 0px 0px;
+    margin: 1vmax;
     color: #624D16;
     font-weight: 100;
     font-family: domain;
+    font-size: 2vmax;
 
 
 
@@ -71,9 +72,9 @@ nav h2 span{
 
 nav h2  .ri-menu-fill{
     background-color: #0a74ae;
-    font-size: 35px;
+    font-size: 2.5vmax;
     border-radius: 50%;
-    padding: 40px;
+    padding: 2.5vmax;
     color: white;
     font-weight: 100;
 }
@@ -84,7 +85,7 @@ nav h2  .ri-menu-fill:hover{
 
 #nav-right{
     width: 50%;
-    height: 120vh;
+    height: 100vh;
     top: 0;
     right: -50%;
     position: absolute;
@@ -92,8 +93,19 @@ nav h2  .ri-menu-fill:hover{
     display: flex;
     justify-content: space-between;
     transition: all cubic-bezier(1,.6,1,1) .6s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    position: fixed;
     
+
 }
+
+#nav-right::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 #nav-right ul{
     display: flex;
@@ -102,13 +114,14 @@ nav h2  .ri-menu-fill:hover{
     flex-direction: column;
     list-style: none;
     font-family: fraunce;
-    font-size: 60px;
-    margin: 80px;
+    font-size: 5vmax;
+    margin: 8vmax;
+    
     /* background-color: yellow; */
  }
 
  #nav-right ul li{
-    padding: 10px;
+    padding: 1vmax;
     color: #f6f6ee;
  }
 
@@ -124,9 +137,11 @@ nav h2  .ri-menu-fill:hover{
  
 
  #nav-right h1{
-    font-size: 80px;
+    font-size: 7vmax;
     color: #f6f6ee;
     font-weight: 100;
+    position: absolute;
+    right: 0%;
     /* background-color: yellow; */
     /* padding-top: 60px; */
  }
@@ -135,9 +150,9 @@ nav h2  .ri-menu-fill:hover{
 
 nav h2  .ri-contacts-fill{
     background-color: #0a74ae;
-    font-size: 25px;
+    font-size: 2.5vmax;
     border-radius: 50%;
-    padding:  3px 3px;
+    padding:  .7vmax;
     color: white;
     font-weight: 100;
 }
@@ -146,25 +161,25 @@ nav h2  .ri-contacts-fill{
     
     /* position: relative; */
     width: 100%;
-    height: 215vh;
-    margin-top: 110px;
-    padding: 40px;
+    /* height: 215vh; */
+    margin-top: 9vmax;
+    padding: 5vh;
     /* background-color: red; */
 
 }
 
 #page1 h1{
 font-family: domain;
-font-size: 25px;
+font-size: 3.3vmax;
 color: #624D16;
-padding-bottom: 25px;
+padding-bottom: 2.1vmax;
 font-weight: 100;
 text-transform: uppercase;
 }
 
 #page1 img{
     width: 100%;
-    height: 780px;
+    /* height: 780px; */
     object-fit: cover;
     overflow: hidden;
     object-position: left;
@@ -172,48 +187,49 @@ text-transform: uppercase;
 
 #p1-footer{
     width: 100%;
-    height: 650px;
-    /* background-color: red; */
+    /* height: 650px; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #p1-footer h1{
-    padding-top: 65px;
+    padding-top: 5vmax;
     color: #0f77b0;
     font-family:fraunce;
     text-transform: capitalize;
-    font-size: 75px;
+    font-size: 6.3vmax;
     display: flex;
     flex-direction: column;  
     text-align: center;
-    line-height: 90px;
+    line-height: 7vmax;
 }
 #p1-footer p{
     color: #624D16;
     text-align: center;
-    font-size: 22px;
-    line-height: 35px;
-    padding-bottom: 20px;
+    font-size: 2vmax;
+    line-height: 3.1vmax;
+    padding-bottom: 2vmax;
     font-family: domain;
     font-weight: 100;
+    width: 43vmax;
+    /* background-color: pink; */
 
 }
 #p1-footer button{
-    margin-top: 30px;
+    margin-top: 2.2vmax;
     background-color: #0a74ae ;
-    height: 150px;
-    width: 150px;
+    height: 10vmax;
+    width: 10vmax;
     border-radius: 50%;
     white-space: nowrap;
     color: white;
     font-weight: 100;
     border: none;
     font-family: domain;
-    font-size: 18px;
+    font-size: 1.3vmax;
+    margin-bottom: 1vmax;
     transition: all ease .3s;
-    
 }
 #p1-footer button:hover{
     border: 1px solid  #0a74ae ;
@@ -224,47 +240,48 @@ text-transform: uppercase;
 
 #page2{
     width: 100%;
-    height: 95vh;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     justify-content: space-between;
-    /* background-color: red; */
+    /* background-color: black; */
+    
     
 }
 #page2-left{
     width: 100%;
-    height: 100%;
-    /* background-color: yellow; */
-    display: flex;
-    align-items: start;
+    
+
 }
 
 #page2-left img{
-    width: 572px;
-    height: 822px;
-    /* overflow: hidden; */
-    object-position: center ;
+    width: 90%;
+    height: 60vmax;
+    overflow: hidden;
+    align-items: start;
+    /* object-position: center ; */
+    
+    vertical-align: middle;
     
    
 }
 
 #page2-right{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     /* background-color: green; */
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding-left: 150px;
-    justify-content: space-between;
+    padding-left: 12vmax;
+    /* justify-content: space-between; */
 }
 
 
 
 #page2 #page2-right h1{
-    padding-top: 20px;
+    padding-top: 2vmax;
     color: #0f77b0;
-    font-size: 75px;
+    font-size: 6.3vmax;
     display: flex;
     flex-direction: column;
     font-family: fraunce;
@@ -273,26 +290,30 @@ text-transform: uppercase;
 #page2 #page2-right p {
     color: #624D16;
     text-align: center;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 2vmax;
+    line-height: 3.1vmax;
     text-align: start;
     font-family: domain;
+    margin-top: 2vmax;
+    width: 88%;
+    text-align: start;
+    /* margin-bottom: 2vmax; */
 }
 
 
 #page2 #page2-right button{
-    margin-top: 30px;
+    margin-top: 3vmax;
     background-color: #0a74ae ;
-    height: 150px;
-    width: 150px;
+    height: 10vmax;
+    width: 10vmax;
     border-radius: 50%;
     white-space: nowrap;
     color: white;
     font-weight: 100;
     border: none;
     font-family: domain;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1.3vmax;
+    margin-bottom: 1vmax;
     transition: all ease .3s;
 }
 #page2 #page2-right button:hover{
@@ -305,35 +326,34 @@ text-transform: uppercase;
 
 #page3{
     width: 100%;
-    height: 100vh;
     background-color: white;
+    display: flex;
 }
 
 #page3-left{
     width: 40%;
-    height: 100%;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
-    padding: 200px;
+    padding-left: 20vmax;
     
 }
 
 #page3-left h1{
-    padding-top: 50px;
+    padding-top: 5vmax;
     font-size: 2.5vmax;
-    margin-left: -100px;
-    line-height: 50px;
+    margin-left: -10vmax;
+    line-height: 4vmax;
     color: #0a74ae;
     /* letter-spacing: -1px; */
     font-family: fraunce;
+    /* background-color: yellow; */
 
 }
 
 #page3-left h2{
     font-size: 1.4vmax;
-    margin-left: -100px;
-    line-height: 50px;
+    margin-left: -10vmax;
+    line-height: 4vmax;
     color: #624D16;
     /* letter-spacing: 1px; */
     font-family: domain;
@@ -342,66 +362,72 @@ text-transform: uppercase;
 
 }
 
-#page3-image{
-    width: 390px;
-    height: 550px;
-    object-fit: cover;
+#page3 img{
+    object-fit: scale-down;
     overflow: hidden;
-    position: absolute;
-    top: 2550px;
-    left: 500px;
-
+    width: 30vmax;
+    height: 42.7vmax;
+    object-position: center;
+    margin-bottom: 2vmax;
+    margin-top: 2vmax;
+    
 }
 
 #page4{
-    /* width: 100%; */
-    height: 225vh;
+    width: 90%;
+    /* height: 225vh; */
     background-color: #f6f6ee;
-    margin: 0 3vmax;
+    margin: auto;
    
 
 }
 #page4 #page4-upper{
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
-    padding-top: 150px;
+    padding-top: 5vmax;
     justify-content: space-between;
     align-items: center;
+    overflow-x: auto;
     
+}
+
+#page4-upper::-webkit-scrollbar{
+    display: none;
 }
 
 #page4-s1,#page4-s2,#page4-s3,#page4-s4{
     /* padding: 80px; */
-    margin: 80px;
+    margin: 4.5vmax;
    
     
 }
 #page4 #page4-upper #page4-s1 h1{
-    width: 200px;
+    width: 12vmax;
     color: #0A74AE;
-    font-size: 45px;
-    line-height: 42px;
+    font-size: 2.8vmax;
+    line-height: 3vmax;
     font-family: fraunce;
     /* text-transform: capitalize; */
+    /* background-color: pink; */
     
 
 }
 
 #page4 #page4-upper #page4-s1 button{
-    margin-top: 30px;
+    margin-top: 3vmax;
     background-color: #0a74ae ;
-    height: 150px;
-    width: 150px;
+    height: 10vmax;
+    width: 10vmax;
     border-radius: 50%;
     white-space: nowrap;
     color: white;
     font-weight: 100;
     border: none;
     font-family: domain;
-    font-size: 18px;
-    margin-bottom: 10px;
-    transition: all linear .3s;
+    font-size: 1.3vmax;
+    margin-bottom: 1vmax;
+    transition: all ease .3s;
 }
 
 #page4 #page4-upper #page4-s1 button:hover{
@@ -416,9 +442,10 @@ text-transform: uppercase;
 #page4 #page4-upper h2{
 
     color: #0A74AE;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 2vmax;
+    line-height: 2.2vmax;
     font-family: fraunce;
+    /* background-color: violet; */
 
     
 }
@@ -427,53 +454,53 @@ text-transform: uppercase;
     color: #0A74AE;
     font-size: 1.3vmax;
     font-weight: 100;
-    line-height: 30px;
-    padding-top: 20px;
+    line-height: 1.6vmax;
+    padding-top: 1.2vmax;
     font-family: domain;
+    /* background-color: red; */
     
 }
 
 #page4-lower{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    
+align-items: start;
    
 
 }
 #page4-lower-left{
-    padding-left: 15px;
+    padding-left: 1vmax;
 }
 
 #page4-lower-right{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
    
 }
 
 #page4-lower-right-lower{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 #page4-lower img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
     overflow: hidden;
-    padding: 18px;
+    padding: 1vmax;
+    /* margin-bottom: 4vmax; */
 }
 
 #page5{
     /* width: 100%; */
-    height: 112vh;
+    /* height: 112vh; */
     background-color: #f6f6ee;
     margin: 0 3vmax;
-    margin-top: 400px;
+    margin-top: 35vmax;
+    margin-bottom: 2vmax;
 }
 
 #page5-upper{
@@ -481,7 +508,7 @@ text-transform: uppercase;
     align-items: center;
     justify-content: space-between;
     /* background-color: yellow; */
-    padding: 80px 80px 0 80px;
+    padding: 4vmax 5vmax 0 5vmax;
 }
 
 
@@ -491,7 +518,7 @@ text-transform: uppercase;
     align-items: start;
     justify-content: space-between;
     /* background-color: green; */
-    padding: 10px;
+    padding: 1vmax;
 
 }
 
@@ -499,7 +526,7 @@ text-transform: uppercase;
     font-family: fraunce;
     font-size: 6.5vmax;
     color: #fb5101;
-    margin-bottom: 200px;
+    margin-bottom: 18vmax;
 }
 
 #p5u-right{
@@ -508,7 +535,7 @@ text-transform: uppercase;
     align-items: start;
     justify-content: space-between;
     /* background-color: red; */
-    padding: 30px;
+    padding: 2.8vmax;
 
 }
 
@@ -516,55 +543,58 @@ text-transform: uppercase;
     font-family: fraunce;
     font-size: 2.5vmax;
     color: #0A74AE;
-    /* margin-bottom: 40px */
+    /* margin-bottom: 5vh */
+    /* background-color: red; */
 
 }
 
 #p5u-right h2{
-    margin-top: 35px;
+    margin-top: 3.5vmax;
     font-family: domain;
-    font-size: 1.5vmax;
+    font-size: 1.7vmax;
     font-weight: 100;
     color: #0A74AE;
+    /* margin-left: vmax; */
 
 }
 
 #page5-lower{
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
     /* background-color: red; */
-    padding: 80px 80px 40px 90px;
+    padding: 0vmax 7vmax 2.5vmax 7vmax;
 
 }
 
 #page5-lower h1{
    font-family: fraunce;
    color: #0A74AE;
-   font-size: 40px;
+   font-size: 4vmax;
 }
 
 #page5-lower h2 input{
     height: 3vmax;
-    width: 70vmax;
+    width: 39vmax;
     font-family: first;
-    padding: 5px;
+    padding: .3vmax;
     border: #0A74AE;
+    font-size: 1.5vmax;
 
 }
 #page5-lower h2 button{
     height: 3vmax;
     width: 7vmax;
     font-family: first;
-    padding: 10px;
+    padding: .5vmax;
     background-color: #0A74AE;
     color: #f6f6ee;
-    font-size: 15px;
-    border-radius: 10px;
-    margin: 10px;
+    font-size: 1.2vmax;
+    border-radius: 1vmax;
+    margin: 1vmax;
     border: none;
 
 }
@@ -580,6 +610,7 @@ text-transform: uppercase;
 
 #page5-lower h3{
     font-family: domain;
+    font-size: 1.2vmax;
 
 }
 
@@ -590,101 +621,99 @@ text-transform: uppercase;
 
 #menu-p1 {
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
    
 }
 #menu-p1 h2 {
-    font-size: 45px;
+    font-size: 4vmax;
     color: #fb5101;
     font-family: fraunce;
-    margin: 40px;
-    margin-top: 100px;
+    margin: 5vmax;
+    margin-top: 10vmax;
+    /* background-color: red; */
    
 }
 
 #menu-p1-heading h1{
     /* background-color: red; */
-    font-size: 87px;
+    font-size: 8vmax;
     font-family: fraunce;
-    padding-left: 130px;
+    padding-left: 13vmax;
     color: #0a74ae;
 
 }
 
 #menu-p1-heading h6{
     /* background-color: red; */
-    font-size: 19px;
+    font-size: 2vmax;
     font-family: domain;
-    padding-left: 130px;
+    padding-left: 13vmax;
     color: #0a74ae;
-    padding-top: 20px;
+    padding-top: 2vmax;
     font-weight: 200;
 }
 #menu-p1-main{
-    width: 100wh;
-    height: 500px;
+    width: 100%;
+    /* height: 500px; */
 }
 #menu-p1-main h3 , #menu-p2-main h3{
     font-family: fraunce;
-    margin-left: 130px;
-    margin-right: 110px;
+    margin-left: 13vmax;
+    margin-right: 11vmax;
     color: #0A74AE;
-    font-size: 30px;
-    padding-top: 50px;
-    padding-bottom: 18px;
+    font-size: 3vmax;
+    padding-top: 5vmax;
+    padding-bottom: 2vmax;
     border-bottom: 1px solid #624D16 ;
 
 }
 
 #menu-p1-main h5,#menu-p2-main h5{
-    font-size: 19px;
+    font-size: 2vmax;
     font-family: domain;
-    padding-left: 130px;
+    padding-left: 13vmax;
     color: #624D16;
-    padding-top: 20px;
+    padding-top: 2vmax;
     font-weight: 200;
 }
 
 #menu-p1-main-items ul,#menu-p2-main-items ul{
-    height: 450px;
-    width: 100wh;
-    padding: 60px 130px 0px 130px;
+    /* height: 450px; */
+    width: 100%;
+    padding: 6vmax 13vmax 0px 13vmax;
     list-style: none;
     /* background-color: red; */
-    font-size: 19px;
+    font-size: 2vmax;
     font-family: domain;
     color: #624D16;
-    line-height: 40px;
+    line-height: 3vmax;
+    
     
     
 }
 
 #menu-p2-main{
-    width: 100wh;
-    height: 650px;
-    margin-top: 150px;
+    width: 100%;
+    margin-top: 19vmax;
     /* background-color: red; */
 }
 
 #menu-p2 {
     width: 100%;
-    height:70vh;
+    /* height:70vh; */
     /* background-color: red; */
    
 }
 
 #menu-p2-img h1 {
-   position: absolute;
-   top:230%;
-   right:15%;
+   
+   display: none;
 }
 
 #menu-p2-img h2 {
-    position: absolute;
-    top:269%;
-    right:26%;
- }
+    
+    display: none;
+ } 
 
- /* menu css khtm */
  
 
